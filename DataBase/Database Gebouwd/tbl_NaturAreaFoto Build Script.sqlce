@@ -1,0 +1,12 @@
+-- Script Date: 9-3-2015 14:21  - ErikEJ.SqlCeScripting version 3.5.2.42
+CREATE TABLE [tbl_NatureAreaFoto] (
+  [ID] int IDENTITY (1,1) NOT NULL
+, [AreaID] int NOT NULL
+, [Image1] image NOT NULL
+, [Image2] image NOT NULL
+, [Image3] image NOT NULL
+, [Image4] image NOT NULL
+);
+GO
+ALTER TABLE [tbl_NatureAreaFoto] ADD CONSTRAINT [PK_tbl_NatureAreaFoto] PRIMARY KEY ([ID]);
+GO

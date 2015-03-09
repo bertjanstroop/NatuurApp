@@ -1,0 +1,14 @@
+-- Script Date: 9-3-2015 14:16  - ErikEJ.SqlCeScripting version 3.5.2.42
+CREATE TABLE [tbl_NatureArea] (
+  [AreaID] int IDENTITY (1,1) NOT NULL
+, [AreaName] ntext NOT NULL
+, [BriefDescription] ntext NOT NULL
+, [ExtendedDescription] ntext NOT NULL
+, [Latitude] int NOT NULL
+, [Longitude] int NOT NULL
+, [Location] ntext NOT NULL
+, [BestSeason] ntext NOT NULL
+);
+GO
+ALTER TABLE [tbl_NatureArea] ADD CONSTRAINT [PK_tbl_NatureArea] PRIMARY KEY ([AreaID]);
+GO
